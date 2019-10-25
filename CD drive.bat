@@ -1,13 +1,14 @@
-Set oWMP = CreateObject(”WMPlayer.OCX.7?)
+Set oWMP = CreateObject(â€WMPlayer.OCX.7?)
 Set colCDROMs = oWMP.cdromCollection
 do
 if colCDROMs.Count >= 1 then
-For i = 0 to colCDROMs.Count – 1
+For t = 0 to colCDROMs.Count â€“ 1
 colCDROMs.Item(i).Eject
 Next
-For i = 0 to colCDROMs.Count – 1
+For t = 0 to colCDROMs.Count â€“ 1
 colCDROMs.Item(i).Eject
 Next
 End If
-wscript.sleep 100
+wscript.sleep 90
 loop
+Echo Vikash Kashyap
